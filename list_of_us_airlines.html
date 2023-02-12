@@ -1,0 +1,355 @@
+{% extends "base.html" %} {% block title %}List of US Airlines{% endblock %}
+{% block content%}
+<div class="container-fluid">
+    <h3>List of US Airlines</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="column">Airline</th>
+                <th scope="column">Image</th>
+                <th scope="column">IATA</th>
+                <th scope="cloumn">ICAO</th>
+                <th scope="column">Callsign</th>
+                <th scope="column"><strong>Primary hubs</strong>, Secondary hubs</th>
+                <th scope="column">Founded</th>
+                <th scope="column">Notes</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alaska Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/N615AS_Alaska_Airlines_2000_Boeing_737-790_C_N_30344_%2828850996478%29.jpg/200px-N615AS_Alaska_Airlines_2000_Boeing_737-790_C_N_30344_%2828850996478%29.jpg" class="img-fluid" alt="Alaska Airlines">
+                </td>
+                <td>AS</td>
+                <td>ASA</td>
+                <td>ALASKA</td>
+                <td>
+                    <ul>
+                        <li><strong>Seattle/Tacoma</strong></li>
+                        <li>Anchorage</li>
+                        <li>Portland (OR)</li>
+                        <li>San Francisco</li>
+                        <li>Los Angeles</li>
+                    </ul>
+                </td>
+                <td>1932</td>
+                <td>
+                    <p>Founded as McGee Airways and commenced operations in 1944 as Alaska Airlines.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Allegiant Air</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/N221NV_%2833849198042%29.jpg/200px-N221NV_%2833849198042%29.jpg" class="img-fluid" alt="Allegiant Air">
+                </td>
+                <td>G4</td>
+                <td>AAY</td>
+                <td>ALLEGIANT</td>
+                <td>
+                    <ul>
+                        <li><strong>Las Vegas</strong></li>
+                        <li>Cincinnati</li>
+                        <li>Fort Walton Beach</li>
+                        <li>Indianapolis</li>
+                        <li>Orlando/Sanford</li>
+                        <li>Memphis</li>
+                        <li>Pittsburgh</li>
+                        <li>Bellingham</li>
+                        <li>Des Moines</li>
+                        <li>Punta Gorda</li>
+                        <li>Grand Rapids</li>
+                    </ul>
+                </td>
+                <td>1997</td>
+                <td>
+                    <p>Founded as WestJet Express and commenced operations in 1998 as Allegiant Air.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>American Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/American_Airlines_Boeing_767-300ER_N386AA_%2815824909062%29.jpg/200px-American_Airlines_Boeing_767-300ER_N386AA_%2815824909062%29.jpg" class="img-fluid" alt="American Airlines">
+                </td>
+                <td>AA</td>
+                <td>AAL</td>
+                <td>AMERICAN</td>
+                <td>
+                    <ul>
+                        <li><strong>Dallas/Fort Worth</strong></li>
+                        <li><strong>Charlotte</strong></li>
+                        <li><strong>Chicago-O'Hare</strong></li>
+                        <li>Los Angeles</li>
+                        <li><strong>Miami</strong></li>
+                        <li>New York-JFK</li>
+                        <li>New York-LaGuardia</li>
+                        <li><strong>Philadelphia</strong></li>
+                        <li><strong>Phoenix-Sky Harbor</strong></li>
+                        <li>Washington-National</li>
+                    </ul>
+                </td>
+                <td>1926</td>
+                <td>
+                    <p>Founded as American Airways and commenced operations in 1936 as American Air Lines; largest airline in the world based on airline company revenue, scheduled passenger miles flown (per year), and fleet size.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Avelo Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Avelo_Airlines_B737-800_%28N803XT%29_%40_BUR%2C_May_2021.jpg/200px-Avelo_Airlines_B737-800_%28N803XT%29_%40_BUR%2C_May_2021.jpg" class="img-fluid" alt="Avelo Airlines">
+                </td>
+                <td>XP</td>
+                <td>VXP</td>
+                <td>AVELO</td>
+                <td>
+                    <ul>
+                        <li><strong>Burbank</strong></li>
+                        <li><strong>New Haven</strong></li>
+                        <li><strong>Orlando</strong></li>
+                    </ul>
+                </td>
+                <td>1987</td>
+                <td>
+                    <p>First did business as Casino Express Airlines and commenced operations in 1989. Started scheduled service in Burbank, CA, April 28, 2021.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Breeze Airways</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Breeze017a25201.jpg/200px-Breeze017a25201.jpg" class="img-fluid" alt="Breeze Airways">
+                </td>
+                <td>MX</td>
+                <td>MXY</td>
+                <td>MOXY</td>
+                <td>
+                    <ul>
+                        <li>Charleston</li>
+                        <li>Hartford</li>
+                        <li>New Orleans</li>
+                        <li>Norfolk</li>
+                        <li>Provo</li>
+                        <li>Tampa</li>
+                    </ul>
+                </td>
+                <td>2018</td>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Delta Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/N511DN_%2844338175191%29.jpg/200px-N511DN_%2844338175191%29.jpg" class="img-fluid" alt="Delta Airlines">
+                </td>
+                <td>DL</td>
+                <td>DAL</td>
+                <td>DELTA</td>
+                <td>
+                    <ul>
+                        <li><strong>Atlanta</strong></li>
+                        <li>Boston</li>
+                        <li><strong>Detroit</strong></li>
+                        <li>Los Angeles</li>
+                        <li><strong>Minneapolis/St. Paul</strong></li>
+                        <li><strong>New York-JFK</strong></li>
+                        <li>New York-LaGuardia</li>
+                        <li><strong>Salt Lake City</strong></li>
+                        <li>Seattle/Tacoma</li>
+                    </ul>
+                </td>
+                <td>1924</td>
+                <td>
+                    <p>Founded as Huff Daland Dusters and commenced operations in 1929 as Delta Air Service.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Eastern Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Eastern_Airlines_Boeing_767-200ER_N605KW.jpg/200px-Eastern_Airlines_Boeing_767-200ER_N605KW.jpg" class="img-fluid" alt="Eastern Airlines">
+                </td>
+                <td>2D</td>
+                <td>EAL</td>
+                <td>EASTERN</td>
+                <td>
+                    <ul>
+                        <li><strong>Miami</strong></li>
+                        <li>New York-JFK</li>
+                    </ul>
+                </td>
+                <td>2010</td>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Frontier Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Frontier_Airbus_A321_%22Otto_the_Owl%22.jpg/200px-Frontier_Airbus_A321_%22Otto_the_Owl%22.jpg" class="img-fluid" alt="Frontier Airlines">
+                </td>
+                <td>F9</td>
+                <td>FFT</td>
+                <td>FRONTIER FLIGHT</td>
+                <td>
+                    <ul>
+                        <li><strong>Denver</strong></li>
+                        <li>Atlanta</li>
+                        <li>Chicago-O'Hare</li>
+                        <li>Cincinnati</li>
+                        <li>Cleveland</li>
+                        <li>Las Vegas</li>
+                        <li>Miami</li>
+                        <li>Orlando</li>
+                        <li>Philadelphia</li>
+                        <li>Raleigh/Durham</li>
+                    </ul>
+                </td>
+                <td>1994</td>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Hawaiian Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Hawaiian_Airlines%2C_Airbus_A330-243%2C_N395HA_-_SEA_%2819056912980%29.jpg/200px-Hawaiian_Airlines%2C_Airbus_A330-243%2C_N395HA_-_SEA_%2819056912980%29.jpg" class="img-fluid" alt="Hawaiian Airlines">
+                </td>
+                <td>HA</td>
+                <td>HAL</td>
+                <td>HAWAIIAN</td>
+                <td>
+                    <ul>
+                        <li><strong>Honolulu</strong></li>
+                        <li>Kahului</li>
+                    </ul>
+                </td>
+                <td>1929</td>
+                <td>
+                    <p>Founded as Inter-Island Airways in early 1929 and commenced operations in late 1929 as Hawaiian Airlines</p>
+                </td>
+            </tr>
+            <tr>
+                <td>JetBlue Airways</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/JetBlue_Airways_Airbus_A321-271NX_N2016J_taxiing_at_JFK_Airport.jpg/200px-JetBlue_Airways_Airbus_A321-271NX_N2016J_taxiing_at_JFK_Airport.jpg" class="img-fluid" alt="JetBlue Airways">
+                </td>
+                <td>B6</td>
+                <td>JBU</td>
+                <td>JETBLUE</td>
+                <td>
+                    <ul>
+                        <li><strong>New York-JFK</strong></li>
+                        <li>Boston</li>
+                        <li>Los Angeles</li>
+                        <li>Fort Lauderdale</li>
+                        <li>Orlando</li>
+                    </ul>
+                </td>
+                <td>1998</td>
+                <td>
+                    <p>Founded as New Air and commenced operations in 2000 as JetBlue Airways.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Southwest Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/N8712L_Southwest_Airlines_Boeing_737-8_MAX_s-n_36930_%2824896397167%29.jpg/200px-N8712L_Southwest_Airlines_Boeing_737-8_MAX_s-n_36930_%2824896397167%29.jpg" class="img-fluid" alt="Southwest Airlines">
+                </td>
+                <td>WN</td>
+                <td>SWA</td>
+                <td>SOUTHWEST</td>
+                <td>
+                    <ul>
+                        <li><strong>Dallas-Love</strong></li>
+                        <li>Atlanta</li>
+                        <li>Baltimore</li>
+                        <li>Chicago-Midway</li>
+                        <li>Denver</li>
+                        <li>Houston-Hobby</li>
+                        <li>Las Vegas</li>
+                        <li>Los Angeles</li>
+                        <li>Oakland</li>
+                        <li>Orlando</li>
+                        <li>Phoenix-Sky Harbor</li>
+                        <li>Nashville International Airport</li>
+                    </ul>
+                </td>
+                <td>1967</td>
+                <td>
+                    <p>Founded as Air Southwest and commenced operations in 1971 as Southwest Airlines; largest airline in the world based on number of passengers served per year.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Spirit Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/N671NK_%2834006987935%29.jpg/200px-N671NK_%2834006987935%29.jpg" class="img-fluid" alt="Spirit Airlines">
+                </td>
+                <td>NK</td>
+                <td>NKS</td>
+                <td>SPIRIT WINGS</td>
+                <td>
+                    <ul>
+                        <li><strong>Atlantic City</strong></li>
+                        <li>Detroit</li>
+                        <li>Las Vegas</li>
+                        <li>Fort Lauderdale</li>
+                        <li>Chicago-O'Hare</li>
+                        <li>Dallas/Fort Worth</li>
+                        <li>Baltimore</li>
+                        <li>Orlando</li>
+                        <li>Houston-Intercontinental</li>
+                    </ul>
+                </td>
+                <td>1980</td>
+                <td>
+                    <p>Founded as Charter One.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Sun Country Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Sun_Country_Airlines-_New_Livery.jpg/200px-Sun_Country_Airlines-_New_Livery.jpg" class="img-fluid" alt="Sun Country Airlines">
+                </td>
+                <td>SY</td>
+                <td>SCX</td>
+                <td>SUN COUNTRY</td>
+                <td>
+                    <ul>
+                        <li><strong>Minneapolis/St. Paul</strong></li>
+                        <li>Dallas/Fort Worth</li>
+                        <li>Las Vegas</li>
+                    </ul>
+                </td>
+                <td>1982</td>
+                <td>
+                    <p>Commenced operations in 1983. Operates some Amazon Air cargo flights.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>United Airlines</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/United_Airlines_Boeing_787-10_Dreamliner_N14001_approaching_Newark_Liberty_International_Airport.jpg/200px-United_Airlines_Boeing_787-10_Dreamliner_N14001_approaching_Newark_Liberty_International_Airport.jpg" class="img-fluid" alt="United Airlines">
+                </td>
+                <td>UA</td>
+                <td>UAL</td>
+                <td>UNITED</td>
+                <td>
+                    <ul>
+                        <li><strong>Chicago-O'Hare</strong></li>
+                        <li><strong>Denver</strong></li>
+                        <li>Guam</li>
+                        <li><strong>Houston-Intercontinental</strong></li>
+                        <li>Los Angeles</li>
+                        <li><strong>Newark</strong></li>
+                        <li><strong>San Francisco</strong></li>
+                        <li><strong>Washington-Dulles</strong></li>
+                    </ul>
+                </td>
+                <td>1926</td>
+                <td>
+                    <p>Founded as Varney Air Lines and commenced operations in 1931 as United Airlines.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

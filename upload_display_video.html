@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Video Questionnaire{% endblock %}
+
+{% block content%}
+<div class="container-fluid">
+    <h2 align='center'>Select a video to upload and play</h2>
+    <p>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul>
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        {% endwith %}    
+    </p>
+
+    {% if filename %}
+    <div  class="container-fluid" style="margin: 10px auto;">
+        <video autoplay="autoplay" controls="controls" preload="preload">
+            <source src="{{ url_for('views.display_video', filename=filename) }}" type="video/mp4"></source>
+        </video>
+    </div>
+    {% endif %}
+    <div class="container-fluid">
+        <form method="POST" action="/upload-video" enctype="multipart/form-data">
+            <dl>
+                <p>
+                    <input type="file" name="file" autocomplete="off" value="Choose File" required>
+                </p>
+            </dl>
+            <p>
+                <input type="submit" value="Upload">
+            </p>
+        </form>
+    </div>
+</div>
+{% endblock %}
